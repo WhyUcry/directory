@@ -120,7 +120,7 @@ header li a:hover {
     display: flex;
     gap: 50px;
 }
-    
+
     /* MAIN. html*/
 
 .div1 { 
@@ -134,6 +134,9 @@ header li a:hover {
     
 }
 
+.div1:hover {
+    box-shadow: 3px 3px 4px 4px grey;
+}
 
 .div1 h1 {
     padding-top: 20px;
@@ -171,6 +174,10 @@ header li a:hover {
     border-radius: 5px;
     width: 500px;
     height: 480px;
+}
+
+.div2:hover {
+    box-shadow: 3px 3px 4px 4px grey;
 }
 
 .div2 h1 {
@@ -214,8 +221,12 @@ header li a:hover {
     border: 1px solid gray;
     border-radius: 5px;
     width: 500px;
-    height: 480px;
+    height: 380px;
     
+}
+
+.div3:hover {
+    box-shadow: 3px 3px 4px 4px grey;
 }
 
 .div3 h1 {
@@ -248,8 +259,12 @@ header li a:hover {
     border: 1px solid gray;
     border-radius: 5px;
     width: 500px;
-    height: 480px;
+    height: 280px;
     
+}
+
+.div4:hover {
+    box-shadow: 3px 3px 4px 4px grey;
 }
 
 .div4 h1 {
@@ -260,11 +275,31 @@ header li a:hover {
 
 .div4 li {
     list-style: none;
+    
 }
 
+.div4 a {
+    color: cadetblue;
+    display: block;
+    font-size: 25px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.div4 a:hover {
+    background-color: aqua;
+    transition: 1.2s;
+}
 
+/* FOOTER */
 
+footer {
+    height: 100px;
+    background-color: cadetblue;
+    margin-top: 50px;
+}
 
 
 
