@@ -129,7 +129,7 @@ header li a:hover {
     border: 1px solid gray;
     border-radius: 5px;
     width: 500px;
-    height: 480px;
+    height: 430px;
     text-align: center;
     
 }
@@ -173,7 +173,7 @@ header li a:hover {
     border: 1px solid gray;
     border-radius: 5px;
     width: 500px;
-    height: 480px;
+    height: 430px;
 }
 
 .div2:hover {
@@ -293,13 +293,79 @@ header li a:hover {
     transition: 1.2s;
 }
 
+/* MAIN. html list */
+
+.html_list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 900px;
+    overflow-y: scroll;
+    left: 100px;
+    text-align: center;
+}
+
+.html_list h1 {
+    color: cadetblue; 
+}
+
+.html_list a {
+    color: cadetblue;
+    display: block;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.html_list a:hover {
+    background-color: aqua;
+    color: grey;
+}
+
+/* CSS LIST */
+
+.css_list_box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -870px;
+}
+
+.css_list {
+    position: absolute;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 900px;
+    overflow-y: scroll;
+    text-align: center;
+    right: 100px;
+}
+
+.css_list a {
+    color: cadetblue;
+    display: block;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.css_list a:hover {
+    background-color: aqua;
+    color: grey;
+}
+
 /* FOOTER */
 
 footer {
-    height: 100px;
     background-color: cadetblue;
-    margin-top: 50px;
+    height: 100px;
+    margin-top: 1000px;
 }
+
 
 
 
