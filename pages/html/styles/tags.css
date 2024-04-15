@@ -56,33 +56,48 @@ header {
     color: white;
 }
 
-    /* HEADER. nav */
+    /* HEADER. menu*/
 
 header ul {
     display: flex;
     flex-direction: row;
     gap: 50px;
     align-items: center;
+}
+
+.menu li {
+    position: relative;
+    color: white;
+    text-align: center;
     list-style: none;
 }
 
-header li a {
-    width: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color: #00ffff34;  
-    text-align: center;
-    
+.menu a {
+    transition: all .5s;
+    color: gray;
+    font-weight: 600;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-header li a:hover {
-    background-color: rgb(14, 231, 159);
-    transition: 1.2s;
+.menu a:hover {
+    background-color: cadetblue;
+    transition: .5s;
+    color: aqua;
+}
+
+.menu ul {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+}
+
+.menu li:hover ul {
+    display: block;
+    width: 200px;
+    background-color: aquamarine;
+    box-shadow: 1px 2px 2px 1px gray;
 }
 
 /* MAIN. html list */
@@ -93,7 +108,7 @@ header li a:hover {
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 700px;
+    height: 500px;
     overflow-y: scroll;
     left: 100px;
     text-align: center;
@@ -142,7 +157,30 @@ header li a:hover {
 
 footer {
     background-color: cadetblue;
-    height: 100px;
-    margin-top: 2000px;
+    height: 300px;
+    margin-top: 100px;
 }
 
+footer ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: aqua;
+}

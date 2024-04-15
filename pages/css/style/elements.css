@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 2000px;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    width: auto;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+    /* HEADER. logo */
+
+.main_logo {
+    position: absolute;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    left: 130px;
+    top: 20px;
+    color: white;
+    font-family: sans-serif; 
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    transition: .3s;
+}
+
+.main_logo:hover {
+    transform: scale(1.1);
+}
+
+.main_logo p {
+    background-color: white;
+    color: cadetblue;
+    padding: -1px;
+}
+
+.main_logo a {
+    text-decoration: none;
+    color: white;
+}
+
+    /* HEADER. menu*/
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
+.menu a {
+    transition: all .5s;
+    color: gray;
+    font-weight: 600;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu a:hover {
+    background-color: cadetblue;
+    transition: .5s;
+    color: aqua;
+}
+
+.menu ul {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+    margin-top: -3px;
+}
+
+.menu li:hover ul {
+    display: block;
+    width: 200px;
+    background-color: aquamarine;
+    box-shadow: 1px 2px 2px 1px gray;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_txt {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+/* flexbox */
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.flexbox img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.flexbox ol {
+    padding-left: 20px;
+}
+
+.flexbox ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+/* css_grid */
+
+.css_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.css_grid ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.css_grid ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* functions */
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.functions ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.functions ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* units */
+
+.units {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.units ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.units ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* type_element */
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.selectors ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.selectors ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* css_elements */
+
+.css_elements h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* CSS LIST */
+
+.css_list_box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.css_list {
+    position: absolute;
+    position: fixed;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    overflow-y: scroll;
+    text-align: center;
+    right: 100px;
+}
+
+.css_list a {
+    color: cadetblue;
+    display: block;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.css_list a:hover {
+    background-color: aqua;
+    color: grey;
+}
+
+/* grid_manual */
+
+.grid_manual p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* adapt_design */
+
+.adapt_design {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adapt_design ul {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.adapt_design li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.adapt_design img {
+    width: 700px;
+}
+
+/* bootstrap */
+
+.bootstrap {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* psevdo_elements */
+
+.psevdo_elements {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* animations */
+
+.animations {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.animations ol, ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+/* peremennie */
+
+.peremennie {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.peremennie ol, ul {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+/* mackets */
+
+.mackets {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ssilki */
+
+.ssilki {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ssilki ul, ol {
+    padding-left: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: cadetblue;
+    height: 300px;
+    margin-top: 100px;
+}
+
+footer ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: aqua;
+}

@@ -55,7 +55,7 @@ header {
     color: white;
 }
 
-    /* HEADER. nav */
+    /* HEADER. menu*/
 
 header ul {
     display: flex;
@@ -64,23 +64,38 @@ header ul {
     align-items: center;
 }
 
-header li a {
-    width: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
+.menu li {
+    position: relative;
     color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color: #00ffff34;  
     text-align: center;
-    
 }
 
-header li a:hover {
-    background-color: rgb(14, 231, 159);
-    transition: 1.2s;
+.menu a {
+    transition: all .5s;
+    color: gray;
+    font-weight: 600;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu a:hover {
+    background-color: cadetblue;
+    transition: .5s;
+    color: aqua;
+}
+
+.menu ul {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+}
+
+.menu li:hover ul {
+    display: block;
+    width: 200px;
+    background-color: aquamarine;
+    box-shadow: 1px 2px 2px 1px gray;
 }
 
 /* MAIN */
@@ -169,7 +184,7 @@ header li a:hover {
     border: 1px solid gray;
     border-radius: 5px;
     width: 500px;
-    height: 430px;
+    height: 330px;
 }
 
 .div2:hover {
@@ -325,7 +340,7 @@ header li a:hover {
 .css_list_box {
     display: flex;
     justify-content: flex-end;
-    margin-top: -870px;
+    margin-top: -820px;
 }
 
 .css_list {
@@ -358,9 +373,34 @@ header li a:hover {
 
 footer {
     background-color: cadetblue;
-    height: 100px;
+    height: 300px;
     margin-top: 1000px;
 }
+
+footer ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
 
 
 
