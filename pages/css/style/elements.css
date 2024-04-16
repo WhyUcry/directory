@@ -91,14 +91,15 @@ header li {
     color: aqua;
 }
 
-.menu ul {
+.menu ol {
     position: absolute;
     display: none;
     border-radius: 7px;
     margin-top: -3px;
+    margin-left: -25px;
 }
 
-.menu li:hover ul {
+.menu li:hover ol {
     display: block;
     width: 200px;
     background-color: aquamarine;
